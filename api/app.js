@@ -10,10 +10,10 @@ config=require('./config/database');
 app=express();
 app.use(compression());
 
-// app.use(forceDomain({
-//   hostname: 'www.fysu.in',
-//   protocol: 'https'
-// }));
+app.use(forceDomain({
+  hostname: 'api.reatchall.com',
+  protocol: 'https'
+}));
 
 port = 3000;
 
