@@ -10,9 +10,9 @@ config=require('./config/database');
 app=express();
 app.use(compression());
 
-// app.use(forceDomain({
-//   protocol: 'https'
-// }));
+app.use(forceDomain({
+  protocol: 'https'
+}));
 
 port = 3000;
 
