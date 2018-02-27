@@ -18,7 +18,7 @@ var express = require('express'),
     CareersCMS = require('../models/careers-cms'),
     Categiry = require('../models/category');
     const Path = require('path');
-    const multer = require('Multer');
+    const multer = require('multer');
 
 const custom_order_storage = multer.diskStorage({
     destination:"./public/custom-orders/",

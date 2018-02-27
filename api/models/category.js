@@ -6,6 +6,10 @@ CategorySchema = mongoose.Schema({
         type: String,
         required: true
     },
+    image: {
+      type: String,
+      required: false
+    },
     created_date: {
       type: String,
       required: true
