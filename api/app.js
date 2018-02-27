@@ -11,7 +11,6 @@ app=express();
 app.use(compression());
 
 app.use(forceDomain({
-  hostname: 'api.reatchall.com',
   protocol: 'https'
 }));
 
