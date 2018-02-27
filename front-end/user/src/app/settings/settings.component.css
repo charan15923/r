@@ -1,0 +1,55 @@
+.main-container{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.main-container > .width-control {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 30px auto;
+}
+.left-index{
+  position: relative;
+  display: block;
+  width: 20%;
+  background-color: #eaeaea;
+}
+.left-index ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.left-index ul li{
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  border-bottom: 1px solid #fff;
+}
+.left-index ul li:hover{
+  background-color: #bbb;
+}
+.selected-set{
+  background-color: #bbb;
+}
+.right-content{
+  position: relative;
+  display: block;
+  width: 75%;
+}

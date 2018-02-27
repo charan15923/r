@@ -1,0 +1,71 @@
+.main-header{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #F5512D;
+  color: #fff;
+  height: 80px;
+}
+.logo{
+  margin: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+.logo h1{
+  font-size: 200%;
+  font-weight: 700;
+}
+.main-nav{
+  margin: 0 100px;
+}
+.main-nav ul li{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.s-dd{
+  z-index: 5;
+  position: absolute;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  left: 0;
+  top: 100%;
+  height: auto;
+  width: 150px;
+  color: #666;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .3);
+}
+.s-dd ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 !important;
+}
+.s-dd li{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  width: 100%;
+  margin: 0 !important;
+}
+.s-dd li:hover{
+  background-color: #eaeaea;
+}
+.settings-trig:hover > .s-dd{
+  display: flex;
+}

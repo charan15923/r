@@ -1,0 +1,85 @@
+<app-main-header></app-main-header>
+<app-sub-header></app-sub-header>
+<div class="main-container">
+  <div class="width-control">
+      <h2 class="page-head">Apply at Reatchall</h2>
+      <p [innerHTML]='careers_p'></p>
+
+      <!-- 
+      Step 1: basic details of applicants 
+      Name as per certificates, surname, father name, mother name, date of birth, gender, mobile number, email id, qualification. --> 
+      <div class="form">
+        <label for="name">Name : *<span class="m-con">As per certificates</span></label>
+        <input type="text" [(ngModel)]='name' class="inputs">
+
+        <label for="name">Father's name:</label>
+        <input type="text" [(ngModel)]='father_name' class="inputs">
+
+        <label for="name">Mother's name:</label>
+        <input type="text" [(ngModel)]='mother_name' class="inputs">
+
+        <label for="name">Date Of Birth:</label>
+      </div>
+
+<!--
+Step 2: education background
+10th class:
+School name, name of the board, secured %, place of school, year of pass,
+Intermediate:
+College name, group/ course type, name of the board, marks secured/% secured, location of college, year of pass.
+Graduation: name of the college, graduation in, affiliated to the university, location of college, secured %, year of pass,
+Post-graduation: 
+
+
+Step 3:
+Work experience and skills
+
+Step 4:
+ Job location available 
+Select state
+Select District 
+Multiple selections Municipality 
+Job designations 
+Regional officer 
+Regional marketing managers
+Marketing managers
+Marketing executives 
+Company promotors 
+Computer operators 
+Company legal adviser  
+Office staff
+Accountants 
+HR managers
+HR recruiters
+Branch managers 
+Photoshop designer 
+ Graphic designers 
+Professional Content writers 
+Software professional (website developers)
+UI designers 
+Android app developers
+IOS app developers 
+Software testers
+Software analysts 
+Team leader 
+Help desk (technical)
+Delivery boys 
+Tele callers 
+ Step 5: 
+Hobbies and social activities and general information 
+Hobbies 
+Social activities 
+do you have 
+1.	Bike 2. License 3. No bike 4. No license 5. Both bike and license
+Would like to work 1 or 2 hours in a week on social activities assisted by company?
+Step 6:
+Communication address and permanent address
+Any one id proof ( aadhar card)
+Photo 
+Resume if have
+Declaration content 
+
+-->
+  </div>
+</div>
+<app-main-footer></app-main-footer>

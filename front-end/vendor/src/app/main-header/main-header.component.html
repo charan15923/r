@@ -1,0 +1,35 @@
+<header class="main-header">
+  <div class="logo" routerLink='/home'>
+    <h1>Reatchall</h1>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li *ngIf='auth.loggedIn()' class="settings-trig">
+        SETTINGS
+        <div class="s-dd">
+          <ul>
+            <li>
+              Dashboard
+            </li>
+            <li routerLink='/profile-settings'>
+              Profile
+            </li>
+            <li routerLink='/change-password'>
+              Change Password
+            </li>
+            <li routerLink='/notifications'>
+              Notifications
+            </li>
+            <li routerLink='/all-orders'>
+              All Orders
+            </li>
+            <li (click)='logout()'>
+              Logout
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </nav>
+</header>

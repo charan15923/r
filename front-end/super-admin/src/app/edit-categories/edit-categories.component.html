@@ -1,0 +1,24 @@
+<h2 class="page-heads">Edit Category / Sub Category</h2>
+<div class="main-core">
+  <select name="" id="" (change)='catSelected($event.target.value)'>
+    <option value="null" disabled>Select Category</option>
+    <option value="{{ cat._id }}" *ngFor='let cat of display_cats'>{{ cat.name }}</option>
+  </select>
+  <div *ngIf='catIsSelected === true' class="dynamic-div">
+    <label for="change-cat-name">Change name for  <strong> {{ selected_cat_name }} </strong>    Category</label> <br>
+    <input type="text" [(ngModel)]='input_cat'>
+    <button (click)='changeNameofSelectedCat()'class='submit'>Update</button>
+    <button (click)='deleteCatClicked()' class="delete-btn"><i class="fas fa-trash-alt"></i> &nbsp; &nbsp;Delete {{ selected_cat_name }}</button>
+  </div>
+  <div *ngIf='subs_exist === true' class="dynamic-div">
+    <select name="" id="" (change)='subSelected($event.target.value)'>
+      <option value="{{ sub._id }}" *ngFor='let sub of display_subs'> {{ sub.name }} </option>
+    </select>
+  </div>
+  <div *ngIf='subCatIsSelected === true' class="dynamic-div">
+      <label for="change-sub-cat-name">Change name for  <strong> {{ selected_sub_name }} </strong>    Category</label> <br>
+      <input type="text" [(ngModel)]='input_subcat'>
+      <button (click)='changeNameofSelectedSubCat()'class='submit'>Update</button>
+      <button (click)='deleteSubCatClicked()' class="delete-btn"><i class="fas fa-trash-alt"></i> &nbsp; &nbsp;Delete {{ selected_sub_name }}</button>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<app-main-header></app-main-header>
+<div class="main-container">
+  <div class="business-header">
+    <nav>
+      <ul>
+        <li [routerLink]="['/business-dashboard', business_id]">
+          Dashboard
+        </li>
+        <li [routerLink]="['/business-orders', business_id]">
+          Orders
+        </li>
+        <li [routerLink]="['/business-notifications', business_id]">
+          Notifications
+        </li>
+        <li [routerLink]="['/business-settings', business_id]">
+          Settings
+        </li>
+        <li [routerLink]="['/business-add-products', business_id]">
+          Add Products
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="dashboard-container">
+    <h2 class="page-heads">
+      Business Dashboard
+    </h2>
+    <div class="dash-core">
+
+      <div class="dash">
+        <!-- Total user visits -->
+        <h4>{{ total_business_visits }}</h4>
+        <h5>Total Visits</h5>
+      </div>
+
+      <div class="dash middle-dash">
+        <!-- Total orders -->
+        <h4>{{ total_business_orders }}</h4>
+        <h5>Total Orders</h5>
+      </div>
+
+      <div class="dash">
+        <!-- Total Products -->
+        <h4>{{ total_business_products }}</h4>
+        <h5>Total Products in store</h5>
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-main-footer></app-main-footer>

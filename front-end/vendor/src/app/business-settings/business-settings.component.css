@@ -1,0 +1,89 @@
+.main-container{
+  position: relative;
+  display: block;
+  min-height: 100vh;
+  max-height: auto;
+  height: auto;
+  width: 100%;
+}
+.business-header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #888;
+}
+.business-header nav{
+  width: 90%;
+  height: 100%;
+}
+.business-header ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.business-header ul li{
+  /* margin: 0 10px; */
+  border-right: 1px solid #999;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  width: 140px;
+}
+.submit-btn {
+  position: relative;
+  display: block;
+  background-color: #d35400;
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
+.submit-btn:hover{
+  background-color: #e67e22;
+}
+.settings-core{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.settings-core label, input{
+  position: relative;
+  display: block;
+  width: 300px;
+  text-align: left;
+}
+input{
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #777;
+  outline: none;
+  margin: 5px auto 20px auto;
+}
+textarea{
+  height: 100px;
+  width: 300px;
+  outline: none;
+  resize: none;
+  margin: 5px auto 0 auto;
+}
+.get-loc{
+  height: 30px;
+  width: 300px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 80%;
+}

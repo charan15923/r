@@ -1,0 +1,59 @@
+<div class="main-container">
+  <h2 class="page-heads">Vendors</h2>
+<div class="width-control">
+  <div class="left">
+    <!-- filters -->
+    <div class="filters-div">
+       <h6>Vendor</h6>
+       <select name="" id="vendor-filter">
+         <option value="">All Vendors</option>
+         <option value="">Commercial Vendors</option>
+         <option value="">Non - Commercial Vendors</option>
+         <option value="">Paid</option>
+         <option value="">UnPaid</option>
+       </select>
+       <h6>Category</h6>
+       <select name="" id="category-filter" (change)='catSelected($event.target.value)'>
+         <option value="" default disabled>All Categories</option>
+         <option value="{{ cat._id }}" *ngFor='let cat of cats'>{{ cat.name }}</option>
+       </select>
+       <h6>Sub Category</h6>
+       <select name="" id="sub-cat-filter" (change)='subCatSelected($event.target.value)'>
+         <option value="{{ sub._id }}" *ngFor='let sub of p_subs'>{{ sub.name }}</option>
+       </select>
+      </div>
+  </div>
+  <div class="right">
+    <div class="v-top">
+      <input type="text"><button>SEARCH</button>
+    </div>
+    <div class="vendors-core">
+      <table class="table table-striped">
+        <tr>
+          <th>
+            Vendor name
+          </th>
+          <th>
+            Moblie number
+          </th>
+          <th>
+            Action
+          </th>
+        </tr>
+
+        <tr *ngFor='let v of display_vendors'>
+          <td>
+            {{ v.name }}
+          </td>
+          <td>
+            {{ v.mobile }}
+          </td>
+          <td>
+              <!-- Actions -->
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</div>

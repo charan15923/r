@@ -1,0 +1,131 @@
+<h2 class="page-heads">Menu Settings</h2>
+<div class="width-control">
+  <div class="form">
+      <h3>Add Categories</h3>
+      <label for="cat-select">Category:</label>
+      <select name="" id="cat-select" (change)='catSelected($event)'>
+        <option value="" default disabled>Select Category</option>
+        <option value="{{ cat._id }}" *ngFor='let cat of all_cats'>{{ cat.name }}</option>
+      </select>
+      <h4>Sub Categories</h4>
+      <div class="table">
+        <table class="table table-striped">
+          <tr>
+            <th>
+              Sub Category
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+
+          <tr *ngFor='let sub of sub_cats'>
+            <td>
+              {{ sub.name }}
+            </td>
+            <td>
+              <input type="checkbox" name="" id="">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <button class="add-btn">Add</button>
+
+  </div>
+  <div class="cats">
+    <h5>Added Categories</h5>
+    <div class="table">
+      <table class="table table-striped">
+        <tr>
+          <th>
+            Category
+          </th>
+          <th>
+            Action
+          </th>
+        </tr>
+        <tr *ngFor='let mcat of e_main_cats'>
+          <td>
+            {{ mcat.name }}
+          </td>
+          <td>
+            <span (click)='deleteMainCatClicked(mcat._id)'>
+              <i class="fas fa-trash-alt"></i>
+            </span>
+          </td>
+        <tr>
+          <td>
+            Category two
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category three
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category four
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category five
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category six
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category seven
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category eight
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category nine
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category ten
+          </td>
+          <td>
+            <i class="fas fa-trash-alt"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

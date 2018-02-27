@@ -1,0 +1,61 @@
+th{
+  font-weight: bold;
+  font-size: 95%;
+}
+td{
+  font-size: 90%;
+}
+.width-control{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.form{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 58%;
+}
+.cats{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 40%;
+}
+.cats h5{
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 500;
+}
+.form h3{
+  font-weight: 500;
+  margin: 20px auto;
+}
+.form label{
+  margin: 6px 0;
+  font-weight: 500;
+}
+.form select{
+  margin-bottom: 20px;
+}
+.form h5{
+  margin: 10px auto;
+}
+.add-btn{
+  height: 30px;
+  width: 100px;
+  border: none;
+  background-color: #d35400;
+  color: #fff;
+  font-size: 90%;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 20px auto;
+}

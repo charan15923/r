@@ -1,0 +1,133 @@
+<app-login-form *ngIf='!auth.loggedIn()'></app-login-form>
+<div class="main-header">
+  <div class="width-control">
+    <div class="header-left-div">
+      <div class="logo">
+        <h1 routerLink='/home'>REATCHALL</h1>
+      </div>
+    </div>
+    <div class="h-middle-div">
+      <div class="h-s-core">
+        <input type="text" class="h-s-input" [(ngModel)]='user_current_address'>
+        <!-- <button (click)='getUserLocation()' class="loc-btn"><i class="fas fa-location-arrow"></i></button> -->
+        <button class="m-s-btn">SEACRH</button>
+      </div>
+    </div>
+    <div class="header-right-div">
+
+      <div class="l-h-cons">
+        <ul>
+          <li routerLink='/privacy-policy'>
+            PRIVACY POLICY
+          </li>
+          <li routerLink='/terms'>
+            TERMS
+          </li>
+          <li routerLink='/vendor-policy'>
+            VENDOR POLICY
+          </li>
+        </ul>
+      </div>
+      
+      <div class="l-h-top">
+        <ul>
+          <li>
+            <span class="l-h-ico">
+                <i class="fas fa-comments"></i>
+            </span>
+            <span class="l-h-title">Contact</span>
+          </li>
+          <li>
+            <span class="l-h-ico">
+                <i class="fas fa-rupee-sign"></i>
+            </span>
+            <span class="l-h-title">Offers Zone</span>
+          </li>
+          <li (click)='showLoginForm()' *ngIf='!auth.loggedIn()'>
+            <span class="l-h-ico">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span class="l-h-title">Login / Signup</span>
+          </li>
+          <li *ngIf='auth.loggedIn()' class="n-mp-btn">
+              <span class="l-h-ico">
+                  <i class="fas fa-rupee-sign"></i>
+              </span>
+              <span class="l-h-title">My Profile</span>
+              <div class="m-profile-dd">
+                <ul>
+                  <li routerLink='/settings'>
+                    Settings
+                  </li>
+                  <li routerLink='/favorites'>
+                    Favorites
+                  </li>
+                  <li routerLink='/notifications'>
+                    Notifications <span id="notification-number"><p>0</p></span>
+                  </li>
+                  <li routerLink='/settings/my-orders'>
+                    My Orders
+                  </li>
+                  <li click='/non-commercial-sell'>
+                    Sell
+                  </li>
+                  <li (click)='auth.logout()'>
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- <header class="main-header">
+  <div class="top-left-dets">
+    <ul>
+      <li>
+        Contact us
+      </li>
+      <li>
+        Offers Zone
+      </li>
+      <li>
+        Advertisement
+      </li>
+      <li (click)='showLoginForm()' *ngIf='!auth.loggedIn()'>
+        Login / SignUp
+      </li>
+      <li *ngIf='auth.loggedIn()' class="n-mp-btn">
+        My Profile
+        <div class="m-profile-dd">
+          <ul>
+            <li>
+              Settings
+            </li>
+            <li (click)='auth.logout()'>
+              Logout
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="main-header-core">
+    <div class="m-h-core">
+      <div class="logo" routerLink='/home'>
+        <h1>Reatchall</h1>
+      </div>
+      <div class="main-search-div">
+        <div class="main-search-core">
+          <input type="search" name="" id="">
+          <button class="search-submit-btn">SEARCH</button>
+        </div>
+      </div>
+      <div class="extra-btn-div">
+        
+      </div>
+    </div>
+  </div>
+</header> -->

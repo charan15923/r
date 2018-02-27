@@ -1,0 +1,27 @@
+.main-core{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+select{
+  margin: 20px auto;
+}
+label {
+  margin-bottom: 20px;
+}
+.delete-btn{
+  height: 30px;
+  width: 160px;
+  background-color: #d35400;
+  border: none;
+  color: #fff;
+  transition: all 0.2s ease;
+  outline: none;
+  cursor: pointer;
+}
+.delete-btn:hover{
+  background-color: red;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .3);
+}

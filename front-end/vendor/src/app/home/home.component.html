@@ -1,0 +1,64 @@
+<app-main-header></app-main-header>
+<div class="main-container">
+  
+  <div class="core-container">
+    
+    <div class="add-business-div">
+      
+      <div class="add-business" routerLink='/add-business'>
+        <span class="add-ico">
+          <i class="fas fa-plus"></i>
+        </span>
+        ADD BUSINESS
+      </div>
+
+    </div>
+    
+    <div *ngIf='business_number == 0' class="no-business" routerLink='/add-business'>
+      You have no Business yet. Click here to add a business.
+    </div>
+  
+    <div class="businesses">
+      <div *ngIf='business_number !== 0'>
+        
+        <div class="business" *ngFor='let b of vendor_businesses'>
+          <div class="img" style="background-image: url('../../assets/img/store.jpg')">
+            <div class="db">
+              <h3>{{ b.business.name }}</h3>
+            </div>
+          </div>
+          <div class="name">
+            <div class="status-core">
+              <div *ngIf='b.status === "open"'>
+                <div class="open-stat stat-selected" (click)='statClicked(b._id, "open", $event.target)'>
+                  OPEN <i class="fas fa-check"></i>
+                </div>
+                <div class="closed-stat stat-unselected" (click)='statClicked(b._id, "close", $event.target)'>
+                  CLOSE
+                </div>
+              </div>
+              <div *ngIf='b.status === "close"'>
+                <div class="open-stat stat-unselected" (click)='statClicked(b._id, "open", $event.target)'>
+                    OPEN
+                </div>
+                <div class="closed-stat stat-selected" (click)='statClicked(b._id, "open", $event.target)'>
+                  CLOSED <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-div" [routerLink]="['/business-dashboard', b._id]">
+            <h5>
+             View Dashboard
+            </h5>
+          </div>
+        </div>
+    
+      </div>
+  
+  
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,56 @@
+<app-main-header></app-main-header>
+<div class="main-container">
+  <div class="business-header">
+    <nav>
+      <ul>
+        <li [routerLink]="['/business-dashboard', business_id]">
+          Dashboard
+        </li>
+        <li [routerLink]="['/business-orders', business_id]">
+          Orders
+        </li>
+        <li [routerLink]="['/business-notifications', business_id]">
+          Notifications
+        </li>
+        <li [routerLink]="['/business-settings', business_id]">
+          Settings
+        </li>
+        <li [routerLink]="['/business-add-products', business_id]">
+          Add Products
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="dashboard-container">
+    <div class="width-control">
+      <h2 class="page-heads">
+        Add Products
+      </h2>
+      <div class="a-p-core">
+
+        <div class="product">
+          <div class="name-core p-flex">
+            <h4>Name: </h4> <input type="text" class="name-inp">
+          </div>
+          <div class="price-core p-flex">
+            <h4>Price: </h4> <input type="text">
+          </div>
+          <div class="discount-core p-flex">
+            <h4>Discount: </h4>
+            <input type="text">
+          </div>
+          <div class="img-core">
+            <label class="img-label">
+              <input type="file" hidden>
+              Upload picture
+            </label>
+          </div>
+        </div>
+        <div class="a-p-btn-core">
+          <button class="add-products-btn">Add More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-main-footer></app-main-footer>

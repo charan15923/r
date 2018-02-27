@@ -1,0 +1,18 @@
+.width-control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label{
+  text-align: left;
+  font-weight: 500;
+  margin: 20px auto 5px auto;
+}
+.t-ico{
+  cursor: pointer;
+}
+th {
+  font-weight: 500;
+}

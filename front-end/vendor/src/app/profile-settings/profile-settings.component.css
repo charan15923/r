@@ -1,0 +1,63 @@
+.main-container{
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  max-height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.width-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-form{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label, input, textarea{
+  width: 300px;
+  text-align: left;
+}
+label{
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+input{
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 0 7px;
+  font-size: 90%;
+  outline: none;
+}
+textarea{
+  height: 150px;
+  resize: none;
+  border-radius: 3px;
+  margin-bottom: 0px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 7px 7px;
+  font-size: 90%;
+  outline: none;
+}
+.get-loc-btn {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  width: 300px;
+  background-color: #d35400;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 90%;
+}

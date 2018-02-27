@@ -1,0 +1,35 @@
+header{
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #666;
+  color: #fff;
+  height: 100px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .3);
+}
+.logo{
+  cursor: pointer;
+  outline: none;
+}
+.logo h1{
+  outline: none;
+  cursor: pointer;
+  font-size: 200%;
+  font-weight: bold;
+}
+.main-logout-btn{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(0%,-50%);
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 100px;
+}

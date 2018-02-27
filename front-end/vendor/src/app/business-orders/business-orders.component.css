@@ -1,0 +1,138 @@
+.main-container{
+  position: relative;
+  display: block;
+  min-height: 100vh;
+  max-height: auto;
+  height: auto;
+  width: 100%;
+}
+.business-header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #888;
+}
+.business-header nav{
+  width: 90%;
+  height: 100%;
+}
+.business-header ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.business-header ul li{
+  /* margin: 0 10px; */
+  border-right: 1px solid #999;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  width: 140px;
+}
+.orders-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orders-container .width-control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.filter-bar {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 400px;
+  margin: 10px auto;
+  /* border: 1px solid #666; */
+}
+.filter-bar select{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 150%;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #666;
+}
+.orders-core{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.order{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, .4);
+  margin: 20px auto;
+}
+.order-head{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+.order-id{
+  margin-left: 20px;
+  font-size: 90%;
+  font-weight: 500;
+  color: #555;
+}
+.order-current-status{
+  margin-right: 20px;
+}
+.order-body{
+  width: 100%;
+}
+.order-details{
+  position: relative;
+  display: block;
+  min-height: 300px;
+}
+.status{
+  font-size: 70%;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.order-action-button{
+  width: 100%;
+}
+.accept-order-btn{
+  height: 40px;
+  width: 100%;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s ease-out;
+  font-size: 90%;
+}
+.accept-order-btn:hover{
+  background-color: #2ecc71;
+}

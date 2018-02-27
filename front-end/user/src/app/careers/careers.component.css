@@ -1,0 +1,12 @@
+.main-container{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+}
+.width-control {
+  position: relative;
+  margin: 20px auto;
+  /* display: flex; */
+}

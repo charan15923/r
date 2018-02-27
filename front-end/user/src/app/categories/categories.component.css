@@ -1,0 +1,33 @@
+.categories{
+  position: relative;
+  display: block;
+  font-weight: 900;
+  font-size: 200%;
+  text-align: center;
+  margin: 30px auto;
+}
+.cats-core{
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.cat-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cat-col ul{
+  margin: 20px auto;
+}
+.cat-col h4{
+  font-weight: 700;
+  font-size: 95%;
+}
+.cat-col li{
+  font-size: 90%;
+  padding: 10px;
+  cursor: pointer;
+}

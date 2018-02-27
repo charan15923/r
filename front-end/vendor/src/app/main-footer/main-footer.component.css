@@ -1,0 +1,86 @@
+.main-footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #333;
+  color: #fff;
+  height: 300px;
+  width: 100%;
+}
+.footer-logo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+.footer-logo h3 {
+  font-size: 400%;
+  font-weight: 700;
+}
+.footer-content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 60%;
+  height: 100%;
+}
+.f-div{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.f-div a{
+  text-decoration: none;
+  color: inherit;
+}
+.s{
+  font-size: 200%;
+  color: rgba(255, 255, 255, .6);
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.s:hover{
+  color: #fff;
+}
+.links{
+  font-size: 90%;
+}
+.links li{
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, .6);
+  transition: all 0.2s ease-in;
+  outline: none;
+}
+.links li:hover{
+  color: #fff;
+}
+.fo-dets li{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px auto;
+}
+.fo-dets li .s {
+  margin-right: 20px;
+  cursor: default;
+}
+.fo-dets li .det-s{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}

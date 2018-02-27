@@ -1,0 +1,20 @@
+.width-control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label{
+  text-align: left;
+  font-weight: 500;
+  margin: 20px auto;
+}
+th{
+  font-weight: 500;
+}
+.table{
+  position: relative;
+  display: block;
+  margin: 10px auto;
+}

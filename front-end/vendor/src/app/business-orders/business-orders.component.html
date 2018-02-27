@@ -1,0 +1,63 @@
+<app-main-header></app-main-header>
+<div class="main-container">
+  <div class="business-header">
+    <nav>
+      <ul>
+        <li [routerLink]="['/business-dashboard', business_id]">
+          Dashboard
+        </li>
+        <li [routerLink]="['/business-orders', business_id]">
+          Orders
+        </li>
+        <li [routerLink]="['/business-notifications', business_id]">
+          Notifications
+        </li>
+        <li [routerLink]="['/business-settings', business_id]">
+          Settings
+        </li>
+        <li [routerLink]="['/business-add-products', business_id]">
+          Add Products
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="orders-container">
+    <div class="width-control">
+      <h2 class="page-heads">Orders</h2>
+      <div class="filter-bar">
+        <select name="" id="">
+          <option value="">All Orders</option>
+          <option value="">Awating reply</option>
+          <option value="">Accepted Orders</option>
+          <option value="">Ignored Orders</option>
+          <option value="">Delivered Orders</option>
+        </select>
+      </div>
+      <div class="orders-core">
+  
+        <div class="order">
+  
+          <div class="order-head">
+            <div class="order-id">
+              #AB123QW
+            </div>
+            <div class="order-current-status">
+              <span class="status">Not Confirmed</span>
+            </div>
+          </div>
+          <div class="order-body">
+            <div class="order-details">
+  
+            </div>
+            <div class="order-action-button">
+              <button class="accept-order-btn">Accept Order</button>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</div>
+<app-main-footer></app-main-footer>

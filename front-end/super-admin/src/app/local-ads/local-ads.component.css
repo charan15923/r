@@ -1,0 +1,21 @@
+.width-control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 250px;
+  border: 1px dashed #666;
+  color: #666;
+  background-color: #eaeaea;
+  white-space: normal;
+  text-align: center;
+}

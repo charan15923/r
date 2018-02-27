@@ -1,0 +1,84 @@
+.v-top{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 60%;
+  margin: 20px auto;
+}
+.v-top input, .v-top button{
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+}
+.v-top input{
+  width: 400px;
+  padding: 0 7px;
+}
+.v-top button{
+  border: none;
+  background-color: #d35400;
+  color: #fff;
+  font-size: 80%;
+  width: 120px;
+  cursor: pointer;
+}
+table th {
+  font-weight: 500;
+}
+.vendors-core{
+  position: relative;
+  display: block;
+  margin-top: 30px;
+}
+.a-div{
+  position: relative;
+  display: block;
+  overflow: visible;
+}
+.a-menu{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  color: #666;
+  width: 150px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+  display: none;
+}
+.a-menu ul li{
+  padding: 5px 0;
+  text-align:center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 90%;
+}
+.a-menu li:hover{
+  background-color: #eaeaea;
+}
+.filters-div{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, .2);
+  height: 40px;
+  box-sizing: border-box;
+}
+.filters-div h6{
+  margin: 0 5px 0 30px;
+  font-size: 90%;
+  font-weight: 500;
+}
+.filters-div select{
+  height: 25px;
+  width: auto;
+  outline: none;
+}

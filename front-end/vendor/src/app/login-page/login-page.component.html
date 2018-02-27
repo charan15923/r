@@ -1,0 +1,28 @@
+<app-main-header></app-main-header>
+<div class="main-container">
+  <div class="signup-core">
+    <h2>Sign up</h2>
+    <div class="form signup-form">
+      <label for="s-name">Name</label>
+      <input type="text" id="s-name" [(ngModel)]='sName'>
+      <label for="s-email">Email</label>
+      <input type="text" id="s-email" [(ngModel)]='sEmail'>
+      <label for="s-mobile">Mobile</label>
+      <input type="text" id="s-mobile" [(ngModel)]='sMobile'>
+      <label for="s-pwd">Password</label>
+      <input type="password" id="s-pwd" [(ngModel)]='sPwd'>
+      <button (click)='createVendorProfile()'>Create Profile</button>
+    </div>
+  </div>
+  <div class="login-core">
+    <h2>Login</h2>
+    <div class="form login-form">
+      <label for="l-mobile">Mobile</label>
+      <input type="text" id="l-mobile" [(ngModel)]='lMobile'>
+      <label for="l-pwd">Password</label>
+      <input type="password" id="l-pwd" [(ngModel)]='lPwd'>
+      <button (click)='vendorLogin()'>Login</button>
+    </div>
+  </div>
+</div>
+<app-main-footer></app-main-footer>

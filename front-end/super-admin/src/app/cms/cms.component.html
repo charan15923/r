@@ -1,0 +1,89 @@
+<h2 class="page-heads">CMS</h2>
+<div class="width-control">
+    <!-- Home page -->
+    <button class="accordion">Home page<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Home page attributes-->
+        <div class="width-control">
+          <h5>Change logo</h5>
+          <label for="logo" class="label logo-label">Click here to change logo</label>
+          <input type="file" id="logo" hidden>
+          <button class="submit" (click)='submitClicked("home")'>SUBMIT</button>
+        </div>
+    </div>
+    <!-- About -->
+    <button class="accordion">About page<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change Cover Image</h5>
+            <label for="logo" class="label logo-label">Click here to change cover</label>
+            <input type="file" id="logo" hidden>
+            <h5>First Paragraph</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="about-editor-one" class="editors"></div>
+            <button class="submit" (click)='submitClicked("about")'> SUBMIT </button>
+        </div>
+    </div>
+    <button class="accordion">Careers page<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change cover image</h5>
+            <label for="logo" class="label logo-label">Click here to change cover </label>
+            <input type="file" id="logo" hidden>
+            <h5>Change intro text</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="careers-editor" class="editors"></div>
+            <button class="submit" (click)='submitClicked("careers")'> SUBMIT </button>
+        </div>
+    </div>
+    <button class="accordion">How it works page<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change cover image</h5>
+            <label for="logo" class="label logo-label">Click here to change cover </label>
+            <input type="file" id="logo" hidden>
+            <h5>Change intro text</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="how_it_works_editor" class="editors"></div>
+            <button class="submit" (click)='submitClicked("how-it-works")'> SUBMIT </button>
+        </div>
+    </div>
+    <button class="accordion">Terms and conditions page<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change terms and conditions</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="terms-editor" class="editors"></div>
+            <button class="submit" (click)='submitClicked("terms")'> SUBMIT </button>
+            <div class="terms-out"></div>
+        </div>
+    </div>
+    <button class="accordion">Privacy Policy<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change intro text</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="privacy-editor" class="editors"></div>
+            <button class="submit" (click)='submitClicked("privacy")'> SUBMIT </button>
+        </div>
+    </div>
+    <button class="accordion">Vendor Policy<span class="chev"><i class="fas fa-chevron-down"></i></span></button>
+    <div class="panel">
+        <!-- Careers page attributes-->
+        <div class="width-control">
+            <h5>Change intro text</h5>
+            <!-- WYSIWYG Editor -->
+            <div id="vendor-policy-editor" class="editors"></div>
+            <button class="submit" (click)='submitClicked("vp")'> SUBMIT </button>
+        </div>
+    </div>
+</div>
+<link href="//cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.quilljs.com/1.3.5/quill.core.css">
+<link href="//cdn.quilljs.com/1.0.0/quill.core.css" rel="stylesheet">
+<script src="//cdn.quilljs.com/1.0.0/quill.core.js"></script>

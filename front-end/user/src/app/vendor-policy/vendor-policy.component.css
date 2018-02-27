@@ -1,0 +1,26 @@
+.main-content{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: auto;
+  width: 100%;
+}
+.main-content > .width-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px auto;
+  height: 100%;
+}
+.notifications-core{
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 20px auto;
+}

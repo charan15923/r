@@ -1,0 +1,43 @@
+<h2 class="page-heads">Add Sub-Category</h2>
+<div class="width-control">
+    <label for="c-name">Category :</label>
+    <select name="" id="" (change)="catSelect($event.target.value)">
+      <option value="null"></option>
+      <option value="{{ cat._id }}" *ngFor='let cat of all_cats'>{{ cat.name }}</option>
+    </select>
+    <label for="s-cat">Sub Category Name:</label>
+    <input type="text" id="s-cat" [(ngModel)]='subCat'>
+    <button class="submit" (click)='addSubCatClicked()'>Add</button>
+    <br>
+    <br>
+    <div *ngIf='placeholder === true'>
+      <div class="table">
+        <table class="table table-striped">
+          <tr>
+            <th>
+              Sub Category Name
+            </th>
+            <th>
+              Created date
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+          <tr *ngFor='let sub of placeholder_subs'>
+            <td>
+              {{ sub.name }}
+            </td>
+            <td>
+              {{ sub.created_date }}
+            </td>
+            <td>
+              <span class="t-ico" (click)='deleteSub(sub._id)'>
+                  <i class="fas fa-trash-alt"></i>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+</div>

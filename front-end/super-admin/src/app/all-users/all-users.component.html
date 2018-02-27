@@ -1,0 +1,87 @@
+<div class="main-container">
+    <h2 class="page-heads">Users</h2>
+  <div class="width-control">
+    <div class="left">
+      <!-- filters -->
+      <div class="filters-div">
+         <h6>User</h6>
+         <select name="" id="vendor-filter">
+           <option value="">All Users</option>
+           <option value="">Recently Registered</option>
+           <option value="">Active</option>
+           <option value="">In-active</option>
+         </select>
+         <!-- <h6>Category</h6>
+         <select name="" id="category-filter">
+           <option value="">Category one</option>
+           <option value="">Category two</option>
+           <option value="">Category three</option>
+           <option value="">Category four</option>
+           <option value="">Category five</option>
+         </select>
+         <h6>Sub Category</h6>
+         <select name="" id="sub-cat-filter">
+           <option value="">Sub Category one</option>
+           <option value="">Sub Category two</option>
+           <option value="">Sub Category three</option>
+           <option value="">Sub Category four</option>
+           <option value="">Sub Category five</option>
+         </select> -->
+        </div>
+    </div>
+    <div class="right">
+      <div class="v-top">
+        <input type="text"><button>SEARCH</button>
+      </div>
+      <div class="vendors-core">
+        <table class="table table-striped">
+          <tr>
+            <th>
+              User name
+            </th>
+            <th>
+              Last login
+            </th>
+            <th>
+              Moblie number
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+          <tr *ngFor='let user of display_users'>
+            <td>
+              {{ user.name }}
+            </td>
+            <td>
+              Paid
+            </td>
+            <td>
+              {{ user.mobile }}
+            </td>
+            <td>
+              <div class="a-div">
+                <div class="cog-btn">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <div class="a-menu">
+                  <ul>
+                    <li>
+                      View
+                    </li>
+                    <li>
+                      Contact
+                    </li>
+                    <li>
+                      Delete
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>

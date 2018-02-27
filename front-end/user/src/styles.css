@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/* You can add global styles to this file, and also import other style files */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body,html{
+	font-family: 'Roboto', sans-serif;
+}
+.width-control {
+	position: relative;
+	width: 1190px;
+	margin: 0 auto;
+}
+.page-head{
+	position: relative;
+	display: block;
+	margin: 10px auto;
+	font-weight: 700;
+	font-size: 200%;
+	text-align: center;
+}
+.page-head::after{
+	content: '';
+	position: absolute;
+	display: block;
+	top: 110%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 1px;
+	width: 70px;
+	background-color: #d35400;
+}
+
+/* Settings content pages */
+
+.set-header-div{
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+	background-color: #eaeaea;
+	margin-bottom: 20px;
+	font-size: 110%;
+	font-weight: 500;
+}
+.set-content-div{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	background-color: #eaeaea;
+	padding: 30px 0;
+}
+.set-content-div label, .set-content-div .inputs{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	width: 300px;
+	height: 40px;
+	border-radius: 3px;
+	outline: none;
+}
+.set-content-div .inputs{
+	border: 1px solid #999;
+	padding: 0 10px;
+	font-size: 80%;
+}
+.set-content-div textarea{
+	display: block;
+	width: 300px;
+	height: 150px;
+	resize: none;
+	border-radius: 3px;
+	outline: none;
+	padding: 10px 10px;
+	font-size: 80%;
+}
+.set-content-div .radio-label{
+	cursor: pointer;
+}
+.set-content-div .submit-btn{
+	margin-top: 20px;
+	height: 40px;
+	width: 150px;
+	background-color: #d35400;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	line-height: 0;
+	padding: 0;
+	font-size: 80%;
+	transition: all 0.3s ease-out;
+	outline: none;
+}
+.set-content-div .submit-btn:hover{
+	box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, .4);
+	background-color: #c0392b;
+}
+.set-content-div .submit-btn:active{
+	box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0);
+}

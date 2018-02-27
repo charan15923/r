@@ -1,0 +1,21 @@
+<app-main-header></app-main-header>
+<app-sub-header></app-sub-header>
+<div class="main-container">
+  <div class="width-control">
+    <div class="left-index">
+      <ul>
+        <li routerLink='profile' class="set-li selected-set">Profile</li>
+        <li routerLink='change-password' class="set-li">Change Password</li>
+        <li routerLink='my-orders' class="set-li">My Orders</li>
+        <li routerLink='my-address' class="set-li">My Address</li>
+        <li routerLink='my-ratings' class="set-li">My Ratings</li>
+        <li routerLink='my-visits' class="set-li">My Visits</li>
+        <li routerLink='feedback' class="set-li">Feedback</li>
+      </ul>
+    </div>
+    <div class="right-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<app-main-footer></app-main-footer>

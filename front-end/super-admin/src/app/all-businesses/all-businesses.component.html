@@ -1,0 +1,90 @@
+<div class="main-container">
+    <h2 class="page-heads">Businesses</h2>
+  <div class="width-control">
+    <div class="left">
+      <!-- filters -->
+      <div class="filters-div">
+         <h6>Vendor</h6>
+         <select name="" id="business-filter" (change)='businessFilterChanged($event.target.value)'>
+           <option value="all">All Businesses</option>
+           <option value="product">Product based</option>
+           <option value="service">Service based</option>
+         </select>
+         <h6>Plan</h6>
+         <select name="" id="category-filter" (change)='planFilterChanged($event.target.value)'>
+           <option value="all">All</option>
+           <option value="free">Free</option>
+           <option value="silver">Silver</option>
+           <option value="gold">Gold</option>
+           <option value="platinum">Platinum</option>
+         </select>
+         <!-- <h6>Status</h6>
+         <select id="">
+           <option value="">All</option>
+           <option value="">Open</option>
+           <option value="">Not Open</option>
+         </select> -->
+        </div>
+    </div>
+    <div class="right">
+      <div class="v-top">
+        <input type="text"><button>SEARCH</button>
+      </div>
+      <div class="vendors-core">
+        <table class="table table-striped">
+          <tr>
+            <th>
+              Business name
+            </th>
+            <th>
+              Type
+            </th>
+            <th>
+              Plan
+            </th>
+            <th>
+              Contact number
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+          <tr *ngFor='let bus of display_businesses'>
+            <td>
+              {{ bus.business.name }}
+            </td>
+            <td>
+                {{ bus.type }}
+            </td>
+            <td>
+                {{ bus.business.plan }}
+            </td>
+            <td>
+                {{ bus.business.contact_number }}
+            </td>
+            <td>
+              <div class="a-div">
+                <div class="cog-btn">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <div class="a-menu">
+                  <ul>
+                    <li>
+                      View
+                    </li>
+                    <li>
+                      Contact
+                    </li>
+                    <li>
+                      Delete
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>

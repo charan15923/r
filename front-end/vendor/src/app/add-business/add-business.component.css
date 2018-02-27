@@ -1,0 +1,217 @@
+.main-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  padding-bottom: 50px;
+  background-color: #ecf0f1;
+}
+h2{
+  position: relative;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+  font-size: 140%;
+  font-weight: 700;
+}
+.business-form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-height: auto; 
+}
+label{
+  font-size: 90%;
+  font-weight: 500;
+  margin: 20px auto 5px auto;
+  width: 100%;
+  text-align: left;
+}
+.t-s{
+  font-size: 90%;
+  font-weight: 300;
+}
+.type-select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 150px;
+  background-color: #95a5a6;
+  margin: 0 !important;
+  transition: all 0.2s ease-out;
+}
+#product-select{
+  border-right: 1px solid #fff;
+}
+.selected-type-select{
+  background-color: #d35400;
+  color: #fff;
+  box-shadow: inset 0 0 10px 1px rgba(0,0,0,.1);
+}
+.b-label{
+  margin: 0 !important;
+  background-color: #95a5a6;
+  color: #000;
+  transition: all 0.3s ease-out;
+}
+.selected-label{
+  box-shadow: inset 0 0 5px 1px rgba(0,0,0,.1);
+  background-color: #c0392b;
+  color: #fff;
+}
+input, textarea{
+  height: 40px;
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  font-size: 85%;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.4);
+}
+input{
+  padding: 0 8px;
+}
+textarea{
+  resize: none;
+  height: 150px;
+  padding: 10px;
+  line-height: 1.5;
+}
+input[type='radio'],input[type='checkbox'] {
+  height: 16px;
+  width: 16px;
+}
+.locate-btn{
+  height: 30px;
+  width: 300px;
+  color: #fff;
+  background-color: #d35400;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 80%;
+}
+.type-select-div,.pay-select-div{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  white-space: nowrap;
+}
+.type-select-div label, .pay-select-div label{
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 100%;
+}
+.b-plans-core{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.b-plan{
+  /* flex-basis: 0;
+  flex-grow: 1; */
+  /* border: 1px solid #666; */
+  background-color: #fff;
+  padding-top: 20px;
+  display: flex;
+  margin: 0 10px;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0);
+  border: 1px solid rgba(0,0,0,.1);
+}
+.selected-b-plan {
+  box-shadow: 0 0 7px 1px rgba(0,0,0,.2);
+  border: none;
+}
+.b-plan-head{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  font-weight: 500;
+}
+.b-plan > ul{
+  position: relative;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  padding: 20px 0;
+}
+.b-plan ul li{
+  padding: 10px 0;
+  font-size: 90%;
+}
+select{
+  height: 30px;
+  width: 200px;
+  outline: none;
+  font-size: 90%;
+}
+.choose-div{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  /* border-top: 1px solid #666; */
+  line-height: 0;
+  font-size: 80%;
+}
+.choose-div label{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit{
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  background-color: #d35400;
+  color: #fff;
+  height: 30px;
+  width: 150px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 90%;
+}
+.submit:hover{
+  background-color: #e67e22;
+}
+th{
+  font-weight: 500;
+  font-size: 95%;
+}
+td{
+  font-size: 90%;
+}

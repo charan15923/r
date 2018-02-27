@@ -1,0 +1,10 @@
+<header>
+  <div class="logo">
+    <h1>Reacthall</h1>
+  </div>
+
+  <button (click)='logout()' class="main-logout-btn" *ngIf='auth.loggedIn() === true'>
+    Logout
+  </button>
+
+</header>

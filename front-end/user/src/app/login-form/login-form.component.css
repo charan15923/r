@@ -1,0 +1,130 @@
+.login-form-db{
+  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, .4);
+}
+.db-cls-btn{
+  position: absolute;
+  display: block;
+  top: -5%;
+  left: 105%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 120%;
+}
+.login-form-core{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 400px;
+  width: 600px;
+}
+.l-f-left, .l-f-right{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.l-f-left{
+  border-right: 1px solid rgba(0, 0, 0, .2);
+}
+.l-f-top{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 13%;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  font-size: 90%; 
+}
+.h-l-selected{
+  background-color: #eaeaea;
+}
+.l-f-core{
+  height: 87%;
+  margin: 0;
+  padding: 0;
+}
+.l-trig,.s-trig{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  color: #666;
+}
+.l-trig{
+  border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.l-form, .s-form{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.l-form h4, .s-form h4{
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-form{
+  height: 85%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.m-form input{
+  margin: 3px auto 10px auto;
+  height: 25px;
+  width: 150px;
+  padding: 0 5px;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid #666;
+}
+.m-form label{
+  font-size: 80%;
+  color: #666;
+}
+.m-form button{
+  width: 100%;
+  height: 30px;
+  background-color: #f39c12;
+  color: #fff;
+  transition: all 0.2s ease-out;
+  border: none;
+  line-height: 0;
+  font-size: 80%;
+  outline: none;
+  cursor: pointer;
+}
+.m-form button:hover{
+  /* background-color: #f1c40f; */
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,.2);
+}

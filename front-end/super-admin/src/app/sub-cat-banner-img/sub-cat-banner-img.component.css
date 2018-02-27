@@ -1,0 +1,18 @@
+.width-control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-label{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  border: 1px dashed #666;
+  background-color: rgba(0, 0, 0, .2);
+  color: #666;
+}

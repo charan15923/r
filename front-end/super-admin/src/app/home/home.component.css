@@ -1,0 +1,54 @@
+.main-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  max-height: auto;
+  height: auto;
+}
+.main-container .width-control{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.stat-core{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stat{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 280px;
+  margin: 20px 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+}
+.stat-one,.stat-four{
+  background-color: #5b8930;
+  color: #fff;
+}
+.stat-two,.stat-three{
+  background-color: #a17917;
+  color: #fff;
+}
+.stat-number h4{
+  font-size: 500%;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.stat-det h5{
+  font-size: 120%;
+  font-weight: 500;
+}

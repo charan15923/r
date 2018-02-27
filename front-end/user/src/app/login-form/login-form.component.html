@@ -1,0 +1,49 @@
+<div class="login-form-db"> 
+ 
+  <div class="login-form-core">
+      <span class="db-cls-btn" (click)='dbClose()'>
+          <i class="fas fa-times"></i>
+      </span>
+    <div class="l-f-left">
+
+    </div>
+    <div class="l-f-right">
+      <div class="l-f-top">
+        <div class="l-trig h-l-selected" (click)='showLoginForm()'>
+          Login
+        </div>
+        <div class="s-trig" (click)='showSignupForm()'>
+          Sign up
+        </div>
+      </div>
+      <div class="l-f-core">
+        <div class="l-form">
+          <h4>Login</h4>
+          <div class="m-form">
+            <label for="l-mobile">Mobile no.</label>
+            <input type="text" [(ngModel)]='loginMobile' id="l-mobile">
+            <label for="l-pwd">Password</label>
+            <input type="password" id="l-pwd" [(ngModel)]='loginPwd'>
+            <button (click)='loginSubmit()'>SUBMIT</button>
+          </div>
+        </div>
+
+        <div class="s-form">
+            <h4>Sign up</h4>
+            <div class="m-form">
+              <label for="s-name">Name</label>
+              <input type="text" id="s-name"  [(ngModel)]='signupName'>
+              <label for="s-email">Email</label>
+              <input type="email" id="s-email" [(ngModel)]='signupEmail'>
+              <label for="s-mobile">Mobile</label>
+              <input type="mobile" id="s-mobile" [(ngModel)]='signupMobile'>
+              <label for="s-pwd">Password</label>
+              <input type="password" id="s-pwd" [(ngModel)]='signupPwd'>
+              <button (click)='signupSubmit()'>SUBMIT</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
